@@ -1,0 +1,43 @@
+body {
+	font-family: sans-serif;
+	color:white;
+	margin:0;
+	padding:0;
+	background-color:black;
+}
+
+.container {
+	padding:10px;
+	font-size:smaller;
+	float:center;
+	margin:auto;
+}
+
+nav .title {
+	text-align:center;
+}
+
+table {
+	margin:auto;
+	margin-top:20px;
+	align-items:center;
+}
+
+table tr th {
+	border:2px solid black;
+	border-radius:5px;
+}
+
+table tr, th, td{
+	background-color:grey;
+	padding:20px;
+}
+
+.leftmargin {
+	margin-left:10px;
+}
+
+.map p iframe {
+	width:90%;
+	height:90%;
+}

@@ -1,0 +1,120 @@
+<script>
+		
+
+	
+	var VID = "000000"; // Enter your VID in the quotation marks.
+	var NAME = "Name Here"; // Enter your IVAO name in the quotation marks.
+
+
+
+
+	function writevid(){
+		document.write('<img src="http://status.ivao.aero/'+VID+'.png">')
+	}
+	function writename(){
+		document.write('<h1>'+NAME+'</h1>')
+	}
+	function gettime(){
+		var d = new Date();
+		var hour = d.getUTCHours();
+		var min = d.getUTCMinutes();
+		var sec = d.getUTCSeconds();
+		if (min < 10) {
+			min = "0" + min
+		}
+		if (sec < 10) {
+			sec = "0" + sec
+		}
+		document.write("As of: "+hour+":"+min+":"+sec+" UTC")
+	}
+
+</script>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IVAO XU | ATC Hub</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="https://xu.ivao.aero/favico.ico">
+		<meta http-equiv="refresh" content="120">
+	</head>
+
+	<body>
+		<div class="container">
+			<nav>
+				<div class="title">
+					<script>gettime()</script>
+					<script>writename()</script>
+					<script>writevid();</script>
+					<p><a href="https://webeye.ivao.aero/" target="_blank" style="color:white;">IVAO Webeye</a></p>
+				</div>
+			</nav>
+			<table>
+				<tr>
+					<th style="background-color:darkgrey;">UK | ROI</th>
+				</tr>
+				<tr>
+					<th style="background-color:darkgrey;"><img src="http://status.ivao.aero/ATC/EG.png"><img class="leftmargin" src="http://status.ivao.aero/ATC/EI.png"></th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th>London Control</th>
+					<th>Shanwick Radio</th>
+					<th style="background-color:green;">Heathrow</th>
+					<th style="background-color:green;">Gatwick</th>
+					<th style="background-color:green;">Stansted</th>
+					<th style="background-color:green;">London City</th>
+					
+				</tr>
+				<tr>
+					<th><img src="http://status.ivao.aero/ATC/EGTT.png"></th>
+					<th><img src="http://status.ivao.aero/ATC/EGGX.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGLL.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGKK.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGSS.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGLC.png"></th>
+				</tr>
+				<tr>
+                                        <th style="background-color:green;">Luton</th>
+					<th style="background-color:green;">Manchester</th>
+					<th style="background-color:green;">Birmingham</th>
+                                        <th style="background-color:green;">Liverpool</th>
+					<th style="background-color:darkgreen;">RAF Valley</th>
+					<th style="background-color:darkgreen;">RAF Brize Norton</th>
+					
+					
+				</tr>
+				<tr>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGGW.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGCC.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGBB.png"></th>
+					<th style="background-color:green;"><img src="http://status.ivao.aero/ATC/EGGP.png"></th>
+					<th style="background-color:darkgreen;"><img src="http://status.ivao.aero/ATC/EGOV.png"></th>
+                                        <th style="background-color:darkgreen;"><img src="http://status.ivao.aero/ATC/EGVN.png"></th>
+					
+				</tr>
+				<tr>
+					<th style="background-color:blue;">Edinburgh</th>
+					<th style="background-color:blue;">Glasgow</th>
+					<th style="background-color:orange;">Belfast</th>
+					<th style="background-color:orange;">Donegal</th>
+					<th style="background-color:yellow;color:black;">Dublin</th>
+					<th style="background-color:yellow;color:black;">Shannon</th>
+				</tr>
+				<tr>
+					<th style="background-color:blue;"><img src="http://status.ivao.aero/ATC/EGPH.png"></th>
+					<th style="background-color:blue;"><img src="http://status.ivao.aero/ATC/EGPF.png"></th>
+					<th style="background-color:orange;"><img src="http://status.ivao.aero/ATC/EGAA.png"></th>
+					<th style="background-color:orange;"><img src="http://status.ivao.aero/ATC/EIDL.png"></th>
+					<th style="background-color:yellow;"><img src="http://status.ivao.aero/ATC/EIDW.png"></th>
+					<th style="background-color:yellow;"><img src="http://status.ivao.aero/ATC/EINN.png"></th>
+				</tr>
+			</table>
+			<div class="map">
+				<p align="center"><iframe src="https://webeye.ivao.aero/"></iframe></p>
+			</div>
+		</div>
+	</body>
+</html>
